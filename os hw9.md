@@ -1,5 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
 # 第九次作业
 
 1400012789 倪蕴哲
@@ -40,4 +38,4 @@ b)
 
 ## 3.15
 
-解不等式：\\(5p + (1 - p) < 2\\)
+解不等式：<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default">\\(5p + (1 - p) < 2\\)</script>
