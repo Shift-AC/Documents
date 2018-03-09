@@ -2,7 +2,7 @@
 
 ## MPTCP Kernel Code Summary
 
-关于TCP&MPTCP的kernel实现的一些说明：
+关于TCP & MPTCP的kernel实现的一些说明：
 
 1. 为什么不自己实现TCP？
 
@@ -63,3 +63,8 @@
     7. Receiver
 
         数据接收器。对于Client，在接收到下行数据时将之转发给用户。对于Proxy，在接收到上行数据时将之转发给服务器。
+
+
+## Note
+
+pTCP
