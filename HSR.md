@@ -1,4 +1,20 @@
-# 模块划分
+# 3.10
+
+## MPTCP Kernel Code Summary
+
+关于TCP&MPTCP的kernel实现的一些说明：
+
+1. 为什么不自己实现TCP？
+
+    因为TCP的kernel实现中包含了诸多高级特性（例：SACK），且Linux Kernel中的TCP并不完全符合标准，而是包含了一些特殊的优化，自己实现的TCP的性能（很可能）难以与之相提并论。
+
+2. MPTCP的参考实现方式？
+
+    - MPTCP直接使用完整的TCP来实现其subflow功能，但在subflow中使用了修改过的事件回调函数。
+
+    - MPTCP为了向下兼容，在内核中管理其control block时采用了TCP control block + MPTCP control block的方式。
+
+## 模块划分
 
 - Kernel Module
 
